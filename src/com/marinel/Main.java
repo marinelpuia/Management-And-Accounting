@@ -35,7 +35,7 @@ public class Main extends Application {
 
 
     @Override
-    public void start(Stage primaryStage) { // throws Exception if you don't want to use the login window
+    public void start(Stage primaryStage) { // add throws Exception if you don't want to use the login window
 
         primaryStage.setTitle("Login Window!!");
         primaryStage.centerOnScreen();
@@ -191,9 +191,9 @@ public class Main extends Application {
         /*
           Use this block code below in case you don't want to use the login option
           Modify the public void start() method by adding the throws Exception
-          Delete all the lines from line 27 to line 174
+          Delete all the lines from line 29 to line 197
           Delete the variable checkUserName from public void stop() method
-          Uncomment the lines 176 to 181
+          Uncomment the lines 199 to 204
         */
 
         //Parent root = FXMLLoader.load(getClass().getResource("main.fxml"));
