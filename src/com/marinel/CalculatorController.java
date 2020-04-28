@@ -163,17 +163,14 @@ public class CalculatorController implements Initializable {
             switch (operation) {
                 case 1: //Addition
                     theOutcome = data + secondOperand;
-                    //display.setText(String.valueOf(theOutcome));
                     display.setText(decimalFormat.format(theOutcome));
                     break;
                 case 2: //Subtraction
                     theOutcome = data - secondOperand;
-                    //display.setText(String.valueOf(theOutcome));
                     display.setText(decimalFormat.format(theOutcome));
                     break;
                 case 3: //Multiplication
                     theOutcome = data * secondOperand;
-                    //display.setText(String.valueOf(theOutcome));
                     display.setText(decimalFormat.format(theOutcome));
                     break;
                 case 4: //Division
@@ -183,7 +180,6 @@ public class CalculatorController implements Initializable {
                     } catch(Exception e) {
                         display.setText("Error");
                     }
-                    //display.setText(String.valueOf(theOutcome));
                     display.setText(decimalFormat.format(theOutcome));
                     break;
             }
