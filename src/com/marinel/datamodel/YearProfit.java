@@ -7,6 +7,7 @@ public class YearProfit {
     // Declare the fields information for all incoming and outgoing and we use
     // SimpleStringProperty to take advantage of data binding to update the
     // user interface
+    
     private final SimpleStringProperty yearNumber = new SimpleStringProperty("");
     private final SimpleStringProperty grossProfitBeforeTax = new SimpleStringProperty("");
     private final SimpleStringProperty amountOfTaxPaid = new SimpleStringProperty("");
@@ -18,7 +19,6 @@ public class YearProfit {
 
     // Create constructor by hand and use String instead of SimpleStringProperty
     public YearProfit(String yearNumber, String grossProfitBeforeTax, String amountOfTaxPaid, String netProfitAfterTax) {
-
         this.yearNumber.set(yearNumber);
         this.grossProfitBeforeTax.set(grossProfitBeforeTax);
         this.amountOfTaxPaid.set(amountOfTaxPaid);
