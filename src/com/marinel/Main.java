@@ -172,6 +172,7 @@ public class Main extends Application {
                             " and reenter the correct login details.");
                     unsuccessfulLogin.showAndWait();
                 }
+                // clear the login fields
                 textFieldUserName.setText("");
                 passwordField.setText("");
             }
@@ -191,9 +192,9 @@ public class Main extends Application {
         /*
           Use this block code below in case you don't want to use the login option
           Modify the public void start() method by adding the throws Exception
-          Delete all the lines from line 29 to line 197
+          Delete all the lines from line 29 to line 198
           Delete the variable checkUserName from public void stop() method
-          Uncomment the lines 199 to 204
+          Uncomment the lines 199 to 205
         */
 
         //Parent root = FXMLLoader.load(getClass().getResource("main.fxml"));
