@@ -1,12 +1,10 @@
 /* === MAIN WINDOW === */
 
 #mainPanel {
-    /* -fx-background-color: linear-gradient(#0d0c0c 0%, #183dd1 92%, #94a0a2 100%); */ // blue gradient 1
-    -fx-background-color: linear-gradient(#94a0a2 0%, #183dd1 90%, #0d0c0c 100%); // blue gradient 2
-
+    -fx-background-color: linear-gradient(#94a0a2 0%, #183dd1 90%, #0d0c0c 100%); 
 }
 
-/* === TOP === */
+/* === TOP AREA === */
 
 .menu-bar {
     -fx-background-color: linear-gradient(#0d0c0c 0%, #183dd1 92%, #94a0a2 100%);
@@ -53,20 +51,19 @@
     -fx-background-insets: 0, 1, 2;
     -fx-background-radius: 0 6 6 6, 0 5 5 5, 0 4 4 4;
     -fx-padding: 0.333333em 0.083333em 0.111111em 0.083333em;
-    /*    -fx-padding: 0.666667em 0.083333em 0.666667em 0.083333em;   */
-    /*    -fx-skin: "com.sun.javafx.scene.control.skin.ContextMenuSkin"; */
 }
 
 /* === Separator  === */
+
 #separator {
     -fx-padding: 2,0,0,2;
 }
 
-/* === CENTER === */
+/* === CENTER AREA === */
 
 /* === table view === */
 .table-view {
-    -fx-background-color: linear-gradient(#0d0c0c 0%, #183dd1 92%, #94a0a2 100%); // blue gradient 1
+    -fx-background-color: linear-gradient(#0d0c0c 0%, #183dd1 92%, #94a0a2 100%);
     -fx-border-color: #ffffff;
     -fx-border-top-insets: 1px;    /* create margin */
     -fx-border-bottom-insets: 1px; /* create margin */
@@ -119,21 +116,21 @@
 }
 
 .table-view .cell:empty{
-    -fx-background-color: #ffffff;  /* #29292D; */
-    -fx-border-color: transparent; /*   #29292D; */
+    -fx-background-color: #ffffff;  
+    -fx-border-color: transparent; 
     -fx-border-width: 0px;
 }
 
 /* === table row cell even and odd hover === */
 .table-view .cell:even:hover {
     -fx-background-color: #5E5151;
-    -fx-text-fill: #f8fc02; /* linear-gradient(#0d0c0c 0%, #183dd1 92%, #94a0a2 100%);  red; */
+    -fx-text-fill: #f8fc02; 
     -fx-font-weight: bold;
     -fx-font-size: 1em;
 }
 .table-view .cell:odd:hover {
     -fx-background-color: #4E4343;
-    -fx-text-fill: #f8fc02; /* linear-gradient(#0d0c0c 0%, #183dd1 92%, #94a0a2 100%);  red; */
+    -fx-text-fill: #f8fc02; 
     -fx-font-weight: bold;
     -fx-font-size: 1em;
 }
@@ -148,13 +145,6 @@
     -fx-border-color: transparent;
 }
 
-/* === table table-row-cell selected === */
-/*
-.table-view .table-row-cell:selected {
-   -fx-background-color: red;
-   -fx-text-fill: #ffffff;
-}
-*/
 .table-view .table-row-cell:filled:focused {
     -fx-background-color: linear-gradient(#0d0c0c 0%, #94a0a2 0%, #202125 100%);
     -fx-text-fill: #ffffff;
@@ -165,16 +155,15 @@
 /* === The increment and decrement button CSS class of scrollbar === */
 .table-view .increment-button ,.table-view .decrement-button {
     -fx-background-color:transparent;
-	-fx-background-radius: 2em;
-
+-fx-background-radius: 2em;
 }
 
 /* === The main scrollbar **track** CSS class === */
 .table-view .scroll-bar:horizontal .track,
 .table-view .scroll-bar:vertical .track{
 	-fx-background-color: transparent;
-	-fx-border-color:derive( #000000,80%);  /* #6622CC */
-    -fx-border-color: linear-gradient(#0d0c0c 0%, #94a0a2 0%, #202125 100%);
+	-fx-border-color:derive( #000000,80%); 
+    	-fx-border-color: linear-gradient(#0d0c0c 0%, #94a0a2 0%, #202125 100%);
 	-fx-background-radius: 2em;
 	-fx-border-radius:2em;
 }
@@ -182,18 +171,16 @@
 /* === The main scrollbar **thumb** CSS class which we drag every time (movable) === */
 .table-view .scroll-bar:horizontal .thumb,
 .table-view .scroll-bar:vertical .thumb {
-    -fx-background-color:derive( #000000,90%);  /* #6622CC */
-    -fx-background-color: linear-gradient(#0d0c0c 0%, #94a0a2 0%, #202125 100%);
+    	-fx-background-color:derive( #000000,90%); 
+    	-fx-background-color: linear-gradient(#0d0c0c 0%, #94a0a2 0%, #202125 100%);
 	-fx-background-insets: 2, 0, 0;
 	-fx-background-radius: 2em;
-
 }
 
 /* === Search Box For Products === */
 
 #searchBox {
-    -fx-background-color: linear-gradient(#0d0c0c 0%, #94a0a2 0%, #202125 100%); // gri gradient
-    //-fx-padding: 5 5 5 5;
+    -fx-background-color: linear-gradient(#0d0c0c 0%, #94a0a2 0%, #202125 100%);
     -fx-text-fill: #09f725; // green
     -fx-font-size: 15 "Time New Roman";
     -fx-font-weight: bold;
@@ -211,15 +198,15 @@
     -fx-background-color: linear-gradient(#0d0c0c 0%, #183dd1 92%, #94a0a2 100%);
 }
 
-/* === BOTTOM === */
+/* === BOTTOM AREA === */
 
 #copyRight {
-    -fx-background-color: transparent; /* linear-gradient(#0d0c0c 0%, #183dd1 92%, #94a0a2 100%); */
+    -fx-background-color: transparent; 
     -fx-padding: 5,0,0,5;
     -fx-border-insets: 1px;      /* create margin */
     -fx-background-insets: 1px;  /* create margin */
     -fx-font: 12 "Time New Roman";
-    -fx-text-fill: white;
+    -fx-text-fill: #FFFFFF;
 }
 
 /* === Dialog Pane add add new product === */
@@ -244,17 +231,15 @@
 /* === Login Window === */
 
 #grid_pane_root {
-     -fx-background-color:  linear-gradient(#0d0c0c 0%, #183dd1 92%, #94a0a2 100%); /* linear-gradient(lightgray, gray); */
-     -fx-border-color: white;
+     -fx-background-color:  linear-gradient(#0d0c0c 0%, #183dd1 92%, #94a0a2 100%); 
+     -fx-border-color: #FFFFFF;
      -fx-border-radius: 20;
-     //-fx-padding: 10 10 10 10;
      -fx-background-radius: 20;
      -fx-text-fill: #ffffff;
-
 }
 
 #border_pane {
-    -fx-background-color:  linear-gradient(#0d0c0c 0%, #183dd1 92%, #94a0a2 100%); /* linear-gradient(gray,DimGrey ); */
+    -fx-background-color:  linear-gradient(#0d0c0c 0%, #183dd1 92%, #94a0a2 100%);
     -fx-text-fill: #ffffff;
 }
 #label_user_name{
@@ -266,7 +251,7 @@
 #btn_Login {
     -fx-background-radius: 30, 30, 29, 28;
     -fx-padding: 3px 10px 3px 10px;
-    -fx-background-color: linear-gradient(#0d0c0c 0%, #183dd1 92%, #94a0a2 100%); /*linear-gradient(orange, orangered ); */
+    -fx-background-color: linear-gradient(#0d0c0c 0%, #183dd1 92%, #94a0a2 100%); 
     -fx-text-fill: #ffffff;
 }
 
@@ -276,20 +261,19 @@
 }
 
 #login_text_title {
-    -fx-text-fill:  linear-gradient(#0d0c0c 0%, #183dd1 92%, #94a0a2 100%); /*linear-gradient(orange, orangered ); */
+    -fx-text-fill:  linear-gradient(#0d0c0c 0%, #183dd1 92%, #94a0a2 100%); 
 }
 
 /* === General - Monthly - Year Accounting Window === */
 
 #labelTitle {
-    -fx-background-color: linear-gradient(#0d0c0c 0%, #94a0a2 0%, #202125 100%); // gri gradient 1
+    -fx-background-color: linear-gradient(#0d0c0c 0%, #94a0a2 0%, #202125 100%);
     -fx-border-color: linear-gradient(#0d0c0c 0%, #94a0a2 0%, #202125 100%);
     -fx-border-top-insets: 2px;    /* create margin */
     -fx-border-right-insets: 2px;    /* create margin */
     -fx-border-bottom-insets: 2px; /* create margin */
     -fx-border-left-insets: 2px;    /* create margin */
     -fx-background-insets: 1px;  /* create margin */
-    /*-fx-font-style: italic; */
     -fx-font-weight: bold;
     -fx-text-fill: linear-gradient(#f7f3f3 100%, #0d0c0c 100%, #183dd1 100%);
     -fx-font-size: 1.5em;
@@ -318,7 +302,7 @@
 
 #instructionsBtn {
 
-    -fx-background-color: #ffffff; /* linear-gradient(#0d0c0c 0%, #94a0a2 0%, #202125 100%); */
+    -fx-background-color: #ffffff; 
     -fx-text-fill: linear-gradient(#0d0c0c 0%, #183dd1 92%, #94a0a2 100%);
     -fx-font-weight: bold;
     -fx-font-size: 1em;
@@ -360,17 +344,16 @@
 
 /* === The increment and decrement button CSS class of scrollbar === */
 .text-area .increment-button ,.text-area .decrement-button {
-    -fx-background-color:transparent;
+    	-fx-background-color:transparent;
 	-fx-background-radius: 2em;
-
 }
 
 /* === The main scrollbar **track** CSS class === */
 .text-area .scroll-bar:horizontal .track,
 .text-area .scroll-bar:vertical .track{
 	-fx-background-color: transparent;
-	-fx-border-color:derive( #000000,80%);  /* #6622CC */
-    -fx-border-color: linear-gradient(#0d0c0c 0%, #94a0a2 0%, #202125 100%);
+	-fx-border-color:derive( #000000,80%); 
+    	-fx-border-color: linear-gradient(#0d0c0c 0%, #94a0a2 0%, #202125 100%);
 	-fx-background-radius: 2em;
 	-fx-border-radius:2em;
 }
@@ -378,11 +361,10 @@
 /* === The main scrollbar **thumb** CSS class which we drag every time (movable) === */
 .text-area .scroll-bar:horizontal .thumb,
 .text-area .scroll-bar:vertical .thumb {
-    -fx-background-color:derive( #000000,90%);  /* #6622CC */
-    -fx-background-color: linear-gradient(#0d0c0c 0%, #94a0a2 0%, #202125 100%);
+    	-fx-background-color:derive( #000000,90%); 
+    	-fx-background-color: linear-gradient(#0d0c0c 0%, #94a0a2 0%, #202125 100%);
 	-fx-background-insets: 2, 0, 0;
 	-fx-background-radius: 2em;
-
 }
 
 /* === Section Ciorna === */
@@ -396,7 +378,6 @@
     -fx-padding: 0 0 0 10;
 }
 
-
 #toolBarCiorna {
     -fx-background-color: linear-gradient(#0d0c0c 0%, #183dd1 92%, #94a0a2 100%);
     -fx-border-top-insets: 1px;    /* create margin */
@@ -407,8 +388,7 @@
 }
 
 #ciornaBtn {
-
-    -fx-background-color: #ffffff; /* linear-gradient(#0d0c0c 0%, #94a0a2 0%, #202125 100%); */
+    -fx-background-color: #ffffff;
     -fx-text-fill: linear-gradient(#0d0c0c 0%, #183dd1 92%, #94a0a2 100%);
     -fx-font-weight: bold;
     -fx-font-size: 1em;
@@ -432,7 +412,6 @@
     -fx-border-bottom-insets: 2px; /* create margin */
     -fx-border-left-insets: 2px;    /* create margin */
     -fx-background-insets: 1px;  /* create margin */
-    /*-fx-font-style: italic; */
     -fx-font-weight: bold;
     -fx-text-fill: linear-gradient(#f7f3f3 100%, #0d0c0c 100%, #183dd1 100%);
     -fx-font-size: 1.1em;
@@ -441,7 +420,6 @@
 
 #textAreaCiorna {
     -fx-background-color: #efeded;
-    //-fx-background-color: linear-gradient(#0d0c0c 0%, #94a0a2 0%, #eff0f4 100%);
     -fx-text-fill: #000000;
     -fx-font: 10pt "Time New Roman";
 }
@@ -492,7 +470,7 @@
 
 /* === The increment and decrement button CSS class of scrollbar === */
 .web-view .increment-button ,.web-view .decrement-button {
-    -fx-background-color:transparent;
+    	-fx-background-color:transparent;
 	-fx-background-radius: 2em;
 
 }
@@ -502,7 +480,7 @@
 .web-view .scroll-bar:vertical .track{
 	-fx-background-color: transparent;
 	-fx-border-color:derive( #000000,80%);  /* #6622CC */
-    -fx-border-color: linear-gradient(#0d0c0c 0%, #94a0a2 0%, #202125 100%);
+    	-fx-border-color: linear-gradient(#0d0c0c 0%, #94a0a2 0%, #202125 100%);
 	-fx-background-radius: 2em;
 	-fx-border-radius:2em;
 }
@@ -510,11 +488,10 @@
 /* === The main scrollbar **thumb** CSS class which we drag every time (movable) === */
 .web-view .scroll-bar:horizontal .thumb,
 .web-view .scroll-bar:vertical .thumb {
-    -fx-background-color:derive( #000000,90%);  /* #6622CC */
-    -fx-background-color: linear-gradient(#0d0c0c 0%, #94a0a2 0%, #202125 100%);
+    	-fx-background-color:derive( #000000,90%);
+    	-fx-background-color: linear-gradient(#0d0c0c 0%, #94a0a2 0%, #202125 100%);
 	-fx-background-insets: 2, 0, 0;
 	-fx-background-radius: 2em;
-
 }
 
 /* === Section Google === */
@@ -555,54 +532,54 @@
     -fx-text-fill: #ffffff;
     -fx-underline: false;
 }
+
 #googleLink:armed {
     -fx-text-fill: -fx-accent;
 }
 
 #googleBtn {
-    -fx-background-color: #ffffff; /* linear-gradient(#0d0c0c 0%, #94a0a2 0%, #202125 100%); */
+    -fx-background-color: #ffffff; 
     -fx-text-fill: linear-gradient(#0d0c0c 0%, #183dd1 92%, #94a0a2 100%);
     -fx-font-weight: bold;
     -fx-font-size: 1.2em;
     -fx-padding: 4 4 4 4;
-    //-fx-border-style: none;
-    //-fx-border-insets: none;
     -fx-border-top-insets: 5px;    /* create margin */
     -fx-border-right-insets: 2px;    /* create margin */
     -fx-border-bottom-insets: 2px; /* create margin */
     -fx-border-left-insets: 2px;    /* create margin */
     -fx-background-insets: 2px;  /* create margin */
 }
+
 #googleBtn:hover {
     -fx-background-color: linear-gradient(#0d0c0c 0%, #94a0a2 0%, #202125 100%);
     -fx-text-fill: #ffffff;
 }
+
 #googleBtn:focused {
     -fx-background-color: #13933e;
     -fx-text-fill: #efeded;
 }
 
-/* === Option Upload File Invoices === */
+/* === Upload File Invoices === */
 
 #getFileBtn {
-
-    -fx-background-color: #ffffff; /* linear-gradient(#0d0c0c 0%, #94a0a2 0%, #202125 100%); */
+    -fx-background-color: #ffffff; 
     -fx-text-fill: linear-gradient(#0d0c0c 0%, #183dd1 92%, #94a0a2 100%);
     -fx-font-weight: bold;
     -fx-font-size: 1.2em;
     -fx-padding: 4 4 4 4;
-    //-fx-border-style: none;
-    //-fx-border-insets: none;
     -fx-border-top-insets: 5px;    /* create margin */
     -fx-border-right-insets: 2px;    /* create margin */
     -fx-border-bottom-insets: 2px; /* create margin */
     -fx-border-left-insets: 2px;    /* create margin */
     -fx-background-insets: 2px;  /* create margin */
 }
+
 #getFileBtn:hover {
     -fx-background-color: linear-gradient(#0d0c0c 0%, #94a0a2 0%, #202125 100%);
     -fx-text-fill: #ffffff;
 }
+
 #getFileBtn:focused {
     -fx-background-color: #13933e;
     -fx-text-fill: #efeded;
@@ -615,13 +592,12 @@
 }
 
 #buttonCalc{
-    -fx-background-color: linear-gradient(#94a0a2 0%, #183dd1 90%, #0d0c0c 100%); // blue
+    -fx-background-color: linear-gradient(#94a0a2 0%, #183dd1 90%, #0d0c0c 100%); 
     -fx-border-color: derive(#2fd179, -30%);
     -fx-border-width: 0.2px;
     -fx-font-size: 15pt;
     -fx-text-fill: whitesmoke;
     -fx-font-family: "Lato bold" "Calibri"
-
 }
 
 #buttonCalc:hover{
@@ -702,7 +678,7 @@
 #textFieldCalc,
 #displayMemo_1,
 #displayMemo_2 {
-    -fx-background-color: #000000; // #E1E1E1;
+    -fx-background-color: #000000; 
 }
 
 #textFieldCalc{
@@ -720,21 +696,20 @@
     -fx-text-fill: #ffffff;
 }
 
-/* === LEGEND === */
+/* === LEGEND CONTABILITATE LUNARA === */
 
 #legendBorderPane {
     -fx-background-color: linear-gradient(#0d0c0c 0%, #94a0a2 0%, #202125 100%);
-    //-fx-background-color: #ffffff;
-    //-fx-background-color: linear-gradient(#0d0c0c 0%, #183dd1 92%, #94a0a2 100%);
-    //-fx-padding: 0 15 10 15;
 }
 
 #legendGridPane {
     -fx-padding: 1 0 1 1;
 }
+
 #legendGridPaneLeft {
     -fx-padding: 4 4 15 4;
 }
+
 #hBoxLegend {
     -fx-padding: 0 0 0 10;
 }
@@ -749,7 +724,6 @@
 }
 
 #legendBtn {
-
     -fx-background-color: #ffffff; /* linear-gradient(#0d0c0c 0%, #94a0a2 0%, #202125 100%); */
     -fx-text-fill: linear-gradient(#0d0c0c 0%, #183dd1 92%, #94a0a2 100%);
     -fx-font-weight: bold;
@@ -821,16 +795,16 @@
     -fx-font-weight: bold;
 }
 #legendExplication {
-    -fx-background-color: #612b05; // maro // linear-gradient(#94a0a2 0%, #183dd1 90%, #0d0c0c 100%); // #7f488a; // mov
+    -fx-background-color: #612b05; // maro 
     -fx-font-style: italic;
     -fx-font-weight: bold;
 }
 
 #textAreaLegend {
-    -fx-background-color: #000000; // linear-gradient(#94a0a2 0%, #183dd1 90%, #0d0c0c 100%); #efeded;
-    -fx-text-fill: #000000; // #25f709; // linear-gradient(#94a0a2 0%, #183dd1 90%, #0d0c0c 100%);
+    -fx-background-color: #000000; 
+    -fx-text-fill: #000000; 
     -fx-font: 10pt "Time New Roman";
-    -fx-pref-height: 353px; // 300
+    -fx-pref-height: 353px; 
     -fx-font-weight: bold;
 }
 
@@ -857,7 +831,6 @@
 /* === NUMBER OF ITEMS IN ALL TABLE VIEW === */
 
 #numberOfBtn {
-
     -fx-background-color: linear-gradient(#0d0c0c 0%, #94a0a2 0%, #202125 100%);  /* #ffffff; */
     -fx-text-fill: #ffffff; /* linear-gradient(#0d0c0c 0%, #183dd1 92%, #94a0a2 100%); blue */
     -fx-font-weight: bold;
@@ -877,14 +850,14 @@
 /* === BAR CHART === */
 
 .chart{
-    -fx-background-color: linear-gradient(#0d0c0c 0%, #94a0a2 0%, #202125 100%); /* gri gradient 1 */
+    -fx-background-color: linear-gradient(#0d0c0c 0%, #94a0a2 0%, #202125 100%);
     -fx-border-color: linear-gradient(#0d0c0c 0%, #94a0a2 0%, #202125 100%);
     -fx-border-top-insets: 2px;      /* create margin */
     -fx-border-right-insets: 2px;    /* create margin */
     -fx-border-bottom-insets: 2px;   /* create margin */
     -fx-border-left-insets: 2px;     /* create margin */
     -fx-background-insets: 1px;      /* create margin */
-    -fx-padding: 5px; // 10
+    -fx-padding: 5px; 
 }
 
 .chart-plot-background {
