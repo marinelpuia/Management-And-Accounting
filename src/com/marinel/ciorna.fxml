@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.control.ToolBar?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Tooltip?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<BorderPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="com.marinel.CiornaController"
+            id="ciornaBorderPane"
+            stylesheets="@styles.css">
+
+    <top>
+        <ToolBar id="toolBarCiorna">
+            <HBox id="hBox" alignment="CENTER_RIGHT" spacing="10">
+                <Button id="ciornaBtn" text="Limba Romană" onAction="#ciornaRomanianLanguage">
+                    <tooltip>
+                        <Tooltip text="Schimbă In Limba Romană"/>
+                    </tooltip>
+                </Button>
+                <Separator id="separator" orientation="VERTICAL"/>
+                <Button id="ciornaBtn" text="Българският език" onAction="#ciornaBulgarianLanguage">
+                    <tooltip>
+                        <Tooltip text="Промяна на български"/>
+                    </tooltip>
+                </Button>
+            </HBox>
+        </ToolBar>
+    </top>
+    <center>
+        <VBox id="vBox" spacing="10">
+            <Label id="labelTitleCiorna" fx:id="labelTitleCiorna" text="CIORNĂ"/>
+            <TextArea id="textAreaCiorna" fx:id="textAreaCiorna" wrapText="true" VBox.vgrow="ALWAYS"/>
+        </VBox>
+    </center>
+</BorderPane>

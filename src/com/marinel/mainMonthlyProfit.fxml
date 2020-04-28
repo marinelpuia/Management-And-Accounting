@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.cell.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.VBox?>
+<BorderPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="com.marinel.MainMonthlyProfitController"
+            stylesheets="@styles.css"
+            fx:id="monthlyProfitMainPanel">
+    <top>
+        <VBox>
+            <MenuBar>
+                <Menu fx:id="menuBtn" text="Meniu">
+                    <MenuItem fx:id="addProfitBtn" text="Adaugă Profit" onAction="#showAddProfitDialog"/>
+                    <MenuItem fx:id="editProfitBtn" text="Editează Profit" onAction="#showEditProfitDialog"/>
+                    <MenuItem fx:id="deleteProfitBtn" text="Sterge Profit" onAction="#deleteProfit"/>
+
+                    <MenuItem fx:id="addProfitBtnBul" text="Добавете печалба" visible="false" onAction="#showAddProfitBulgarianDialog"/>
+                    <MenuItem fx:id="editProfitBtnBul" text="Редактиране на печалба"  onAction="#showEditProfitBulgarianDialog" visible="false"/>
+                    <MenuItem fx:id="deleteProfitBtnBul" text="Изтриване на печалбата" onAction="#deleteProfitBulgarian" visible="false"/>
+                </Menu>
+                <Menu fx:id="buttonSelectLanguage" text="Изберете Език">
+                    <MenuItem text="Българският език" onAction="#bulgarianLanguage" />
+                    <MenuItem text="Limba Romană" onAction="#romanianLanguage"/>
+                </Menu>
+                <Menu fx:id="openSearchBox" text="Căsuţă De Căutare">
+                    <MenuItem fx:id="searchBoxOpenBtn" text="Deschide căsuţa de căutare" onAction="#openSearchBox"/>
+                    <MenuItem fx:id="searchBoxCloseBtn" text="Închide căsuţa de căutare" onAction="#closeSearchBox"/>
+                </Menu>
+                <Menu fx:id="legend" text="Legendă Culori">
+                    <MenuItem fx:id="openLegendBtn" text="Deschide Legenda" onAction="#openLegend"/>
+                </Menu>
+            </MenuBar>
+        </VBox>
+    </top>
+    <center>
+        <VBox>
+            <Label id="labelTitle" fx:id="labelTitle" text="CONTABILITATE LUNARĂ"/>
+            <TableView fx:id="monthlyProfitTableView" VBox.vgrow="ALWAYS" onKeyPressed="#handleDeleteKeyPressed">
+                <columnResizePolicy>
+                    <TableView fx:constant="CONSTRAINED_RESIZE_POLICY"/>
+                </columnResizePolicy>
+                <columns>
+                    <TableColumn fx:id="numberOfRow" text="Nr"/>
+
+                    <TableColumn fx:id="monthlyName" text="Luna">
+                        <cellValueFactory>
+                            <PropertyValueFactory property="monthlyName"/>
+                        </cellValueFactory>
+                    </TableColumn>
+
+                    <TableColumn fx:id="yearNumber" text="Anul">
+                        <cellValueFactory>
+                            <PropertyValueFactory property="yearNumber"/>
+                        </cellValueFactory>
+                    </TableColumn>
+
+                    <TableColumn fx:id="grossProfit" text="Profit Brut">
+                        <cellValueFactory>
+                            <PropertyValueFactory property="grossProfit"/>
+                        </cellValueFactory>
+                    </TableColumn>
+
+                    <TableColumn fx:id="productsOriginalPrice" text="Investiţie">
+                        <cellValueFactory>
+                            <PropertyValueFactory property="productsOriginalPrice"/>
+                        </cellValueFactory>
+                    </TableColumn>
+
+                    <TableColumn fx:id="rentAmount" text="Chirie">
+                        <cellValueFactory>
+                            <PropertyValueFactory property="rentAmount"/>
+                        </cellValueFactory>
+                    </TableColumn>
+
+                    <TableColumn fx:id="salaryAmount" text="Salariu">
+                        <cellValueFactory>
+                            <PropertyValueFactory property="salaryAmount"/>
+                        </cellValueFactory>
+                    </TableColumn>
+
+                    <TableColumn fx:id="electricityCost" text="Electricitate">
+                        <cellValueFactory>
+                            <PropertyValueFactory property="electricityCost"/>
+                        </cellValueFactory>
+                    </TableColumn>
+
+                    <TableColumn fx:id="heatingCost" text="Incălzire">
+                        <cellValueFactory>
+                            <PropertyValueFactory property="heatingCost"/>
+                        </cellValueFactory>
+                    </TableColumn>
+
+                    <TableColumn fx:id="waterCost" text="Apă">
+                        <cellValueFactory>
+                            <PropertyValueFactory property="waterCost"/>
+                        </cellValueFactory>
+                    </TableColumn>
+
+                    <TableColumn fx:id="advertisingCost" text="Publicitate">
+                        <cellValueFactory>
+                            <PropertyValueFactory property="advertisingCost"/>
+                        </cellValueFactory>
+                    </TableColumn>
+
+                    <TableColumn fx:id="religiousDayExpenses" text="Sărbători">
+                        <cellValueFactory>
+                            <PropertyValueFactory property="religiousDayExpenses"/>
+                        </cellValueFactory>
+                    </TableColumn>
+
+                    <TableColumn fx:id="otherExpenses" text="Alte Cheltuieli">
+                        <cellValueFactory>
+                            <PropertyValueFactory property="otherExpenses"/>
+                        </cellValueFactory>
+                    </TableColumn>
+
+                    <TableColumn fx:id="netIncome" text="Profit Net ( LEV )">
+                        <cellValueFactory>
+                            <PropertyValueFactory property="netIncome"/>
+                        </cellValueFactory>
+                    </TableColumn>
+                </columns>
+            </TableView>
+        </VBox>
+    </center>
+</BorderPane>

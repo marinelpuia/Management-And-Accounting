@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.web.WebView?>
+<BorderPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="com.marinel.GoogleHomePageController"
+            id="googleBorderPane" fx:id="googleBorderPane"
+            stylesheets="@styles.css">
+
+    <top>
+        <Hyperlink id="googleLink" fx:id="googleLink" onAction="#handleGoogleLink" alignment="CENTER"/>
+    </top>
+    <center>
+        <WebView fx:id="googleWebView"/>
+    </center>
+    <Separator/>
+    <Separator/>
+    <bottom>
+        <Button id="googleBtn" fx:id="googleBtn" text="Click Me To Open Google Home Page Directly On Your Own Browser"  onAction="#googleDeskTop"
+                BorderPane.alignment="CENTER"/>
+    </bottom>
+</BorderPane>

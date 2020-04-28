@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<DialogPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="com.marinel.InvoiceDialogController"
+            fx:id="dialogPane"
+            prefWidth="430.0" prefHeight="250.0" stylesheets="@styles.css">
+
+    <content>
+        <GridPane vgap="10" hgap="10">
+            <Label text="Invoice Name:" GridPane.rowIndex="0" GridPane.columnIndex="0"/>
+            <TextField fx:id="invoiceNameField" GridPane.rowIndex="0" GridPane.columnIndex="1" prefWidth="250"/>
+
+            <Label text="Pick Up Date:" GridPane.rowIndex="1" GridPane.columnIndex="0"/>
+            <DatePicker fx:id="getDateOption" GridPane.rowIndex="1" GridPane.columnIndex="1" prefWidth="250" onAction="#pasteDate"/>
+
+            <Label text="Date Was Pasted Here:" GridPane.rowIndex="2" GridPane.columnIndex="0"/>
+            <TextField fx:id="pickUpDateFiled" GridPane.rowIndex="2" GridPane.columnIndex="1" prefWidth="250"/>
+
+            <Label text="Pick Up Link:" GridPane.rowIndex="3" GridPane.columnIndex="0"/>
+            <Button text="Upload Link" id="getFileBtn" GridPane.rowIndex="3" GridPane.columnIndex="1" prefWidth="250"
+                    onAction="#getTheFile"/>
+
+            <Label text="Link Was Pasted Here:" GridPane.rowIndex="4" GridPane.columnIndex="0"/>
+            <TextField fx:id="pickUpLinkField" GridPane.rowIndex="4" GridPane.columnIndex="1" prefWidth="250"/>
+        </GridPane>
+    </content>
+</DialogPane>

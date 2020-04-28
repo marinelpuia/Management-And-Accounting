@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.Circle?>
+<BorderPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="com.marinel.LegendMonthlyProfitController"
+            stylesheets="@styles.css"
+            id="legendBorderPane">
+    <top>
+        <ToolBar id="toolBarLegend">
+            <HBox id="hBoxLegend" alignment="CENTER_RIGHT" spacing="10">
+                <Button id="legendBtn" text="Limba Romană" onAction="#legendRomanianLanguage">
+                    <tooltip>
+                        <Tooltip text="Schimbă In Limba Romană"/>
+                    </tooltip>
+                </Button>
+                <Separator orientation="VERTICAL"/>
+                <Button id="legendBtn" text="Българският език" onAction="#legendBulgarianLanguage">
+                    <tooltip>
+                        <Tooltip text="Промяна на български"/>
+                    </tooltip>
+                </Button>
+            </HBox>
+        </ToolBar>
+    </top>
+    <left>
+        <GridPane id="legendGridPaneLeft">
+            <VBox spacing="14">
+                <Circle fx:id="redCircle" GridPane.rowIndex="0" GridPane.columnIndex="0"/>
+                <Circle fx:id="blackCircle" GridPane.rowIndex="1" GridPane.columnIndex="0"/>
+                <Circle fx:id="orangeCircle" GridPane.rowIndex="2" GridPane.columnIndex="0"/>
+                <Circle fx:id="blueCircle" GridPane.rowIndex="3" GridPane.columnIndex="0"/>
+                <Circle fx:id="greenCircle" GridPane.rowIndex="4" GridPane.columnIndex="0"/>
+                <Circle fx:id="greenLightCircle" GridPane.rowIndex="5" GridPane.columnIndex="0"/>
+            </VBox>
+        </GridPane>
+    </left>
+    <center>
+        <GridPane id="legendGridPane">
+            <VBox spacing="10">
+                <Label id="redLabel" fx:id="redLabel" GridPane.rowIndex="0" GridPane.columnIndex="0"/>
+                <Label id="blackLabel" fx:id="blackLabel" GridPane.rowIndex="1" GridPane.columnIndex="0"/>
+                <Label id="orangeLabel" fx:id="orangeLabel" GridPane.rowIndex="2" GridPane.columnIndex="0"/>
+                <Label id="blueLabel" fx:id="blueLabel" GridPane.rowIndex="3" GridPane.columnIndex="0"/>
+                <Label id="greenLabel" fx:id="greenLabel" GridPane.rowIndex="4" GridPane.columnIndex="0"/>
+                <Label id="greenLightLabel" fx:id="greenLightLabel" GridPane.rowIndex="5" GridPane.columnIndex="0"/>
+                <Label id="legendExplication" fx:id="legendExplicationLabel" GridPane.rowIndex="6" GridPane.columnIndex="0"/>
+            </VBox>
+            <TextArea id="textAreaLegend" fx:id="textAreaLegend" GridPane.rowIndex="7" GridPane.columnIndex="0"  wrapText="true" editable="false"/>
+        </GridPane>
+    </center>
+</BorderPane>

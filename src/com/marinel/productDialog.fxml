@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<DialogPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="com.marinel.ProductDialogController"
+            prefWidth="510.0" prefHeight="200.0" stylesheets="@styles.css" onMouseMoved="#userInputsWarning">
+    <content>
+        <GridPane vgap="10" hgap="10">
+            <Label text="Denumire Produs" GridPane.rowIndex="0" GridPane.columnIndex="0"/>
+            <TextField fx:id="productNameField" GridPane.rowIndex="0" GridPane.columnIndex="1" prefWidth="250"/>
+
+            <Label text="Marcă Produs" GridPane.rowIndex="1" GridPane.columnIndex="0"/>
+            <TextField fx:id="brandNameField" GridPane.rowIndex="1" GridPane.columnIndex="1" prefWidth="250"/>
+
+            <Label text="Model" GridPane.rowIndex="2" GridPane.columnIndex="0"/>
+            <TextField fx:id="modelNumberField" GridPane.rowIndex="2" GridPane.columnIndex="1" prefWidth="250"/>
+
+            <Label text="Culoare" GridPane.rowIndex="3" GridPane.columnIndex="0"/>
+            <TextField fx:id="colorNameField" GridPane.rowIndex="3" GridPane.columnIndex="1" prefWidth="250"/>
+
+            <Label text="Mărime" GridPane.rowIndex="4" GridPane.columnIndex="0"/>
+            <TextField fx:id="sizeValueField" GridPane.rowIndex="4" GridPane.columnIndex="1" prefWidth="250"/>
+
+            <Label text="Categorie" GridPane.rowIndex="5" GridPane.columnIndex="0"/>
+            <TextField fx:id="categoryNameField" GridPane.rowIndex="5" GridPane.columnIndex="1" prefWidth="250"/>
+
+            <Label text="Adresă Web" GridPane.rowIndex="6" GridPane.columnIndex="0"/>
+            <TextField fx:id="webAddressField" GridPane.rowIndex="6" GridPane.columnIndex="1" prefWidth="250"/>
+
+            <Label text="Alege o Dată:" GridPane.rowIndex="7" GridPane.columnIndex="0"/>
+            <DatePicker fx:id="getDateOption" GridPane.rowIndex="7" GridPane.columnIndex="1" prefWidth="250" onAction="#pasteDate"/>
+
+            <Label text="Data achiziţiei" GridPane.rowIndex="8" GridPane.columnIndex="0"/>
+            <TextField fx:id="dateOfPurchaseField" GridPane.rowIndex="8" GridPane.columnIndex="1" prefWidth="250"/>
+
+            <Label text="Cantitate ( Pereche sau Bucată )" GridPane.rowIndex="9" GridPane.columnIndex="0"/>
+            <TextField fx:id="volumeQuantityField" GridPane.rowIndex="9" GridPane.columnIndex="1" prefWidth="250"/>
+
+            <Label text="Preţ De Achiziţiei ( Pereche sau Bucată )" GridPane.rowIndex="10" GridPane.columnIndex="0"/>
+            <TextField fx:id="buyingPriceField" GridPane.rowIndex="10" GridPane.columnIndex="1" prefWidth="250"/>
+
+            <Label text="Preţ De Vânzare ( Pereche sau Bucată )" GridPane.rowIndex="11" GridPane.columnIndex="0"/>
+            <TextField fx:id="sellingPriceField" GridPane.rowIndex="11" GridPane.columnIndex="1" prefWidth="250"/>
+
+            <Label text="Stoc Actual" GridPane.rowIndex="12" GridPane.columnIndex="0"/>
+            <TextField fx:id="remainingStockField" GridPane.rowIndex="12" GridPane.columnIndex="1" prefWidth="250"/>
+        </GridPane>
+    </content>
+</DialogPane>

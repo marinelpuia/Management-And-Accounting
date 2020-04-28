@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="ManagementAndAccounting:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/ManagementAndAccounting_jar</output-path>
+    <root id="archive" name="ManagementAndAccounting.jar">
+      <element id="module-output" name="ManagementAndAccounting" />
+    </root>
+  </artifact>
+</component>

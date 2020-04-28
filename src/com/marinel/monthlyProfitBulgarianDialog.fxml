@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<DialogPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="com.marinel.MonthlyProfitBulgarianDialogController"
+            prefWidth="410.0" prefHeight="200.0" stylesheets="@styles.css" onMouseMoved="#userInputsWarning">
+
+    <content>
+        <GridPane vgap="10" hgap="10">
+            <Label text="Изберете дата:" GridPane.rowIndex="0" GridPane.columnIndex="0"/>
+            <DatePicker fx:id="getDateOption" GridPane.rowIndex="0" GridPane.columnIndex="1" prefWidth="250" onAction="#pasteDate"/>
+
+            <Label text="месец:" GridPane.rowIndex="1" GridPane.columnIndex="0"/>
+            <TextField fx:id="monthNameField" GridPane.rowIndex="1" GridPane.columnIndex="1" prefWidth="250"/>
+
+            <Label text="година:" GridPane.rowIndex="2" GridPane.columnIndex="0"/>
+            <TextField fx:id="yearNumberField" GridPane.rowIndex="2" GridPane.columnIndex="1" prefWidth="250"/>
+
+            <Label text="Брутна печалба:" GridPane.rowIndex="3" GridPane.columnIndex="0"/>
+            <TextField fx:id="grossProfitField" GridPane.rowIndex="3" GridPane.columnIndex="1" prefWidth="250"/>
+
+            <Label text="инвестиция:" GridPane.rowIndex="4" GridPane.columnIndex="0"/>
+            <TextField fx:id="productsOriginalPriceField" GridPane.rowIndex="4" GridPane.columnIndex="1" prefWidth="250"/>
+
+            <Label text="под наем:" GridPane.rowIndex="5" GridPane.columnIndex="0"/>
+            <TextField fx:id="rentAmountField" GridPane.rowIndex="5" GridPane.columnIndex="1" prefWidth="250"/>
+
+            <Label text="заплата:" GridPane.rowIndex="6" GridPane.columnIndex="0"/>
+            <TextField fx:id="salaryAmountField" GridPane.rowIndex="6" GridPane.columnIndex="1" prefWidth="250"/>
+
+            <Label text="електричество:" GridPane.rowIndex="7" GridPane.columnIndex="0"/>
+            <TextField fx:id="electricityCostField" GridPane.rowIndex="7" GridPane.columnIndex="1" prefWidth="250"/>
+
+            <Label text="отопление:" GridPane.rowIndex="8" GridPane.columnIndex="0"/>
+            <TextField fx:id="heatingCostField" GridPane.rowIndex="8" GridPane.columnIndex="1" prefWidth="250"/>
+
+            <Label text="вода:" GridPane.rowIndex="9" GridPane.columnIndex="0"/>
+            <TextField fx:id="waterCostField" GridPane.rowIndex="9" GridPane.columnIndex="1" prefWidth="250"/>
+
+            <Label text="реклама:" GridPane.rowIndex="10" GridPane.columnIndex="0"/>
+            <TextField fx:id="advertisingCostField" GridPane.rowIndex="10" GridPane.columnIndex="1" prefWidth="250"/>
+
+            <Label text="празнувам:" GridPane.rowIndex="11" GridPane.columnIndex="0"/>
+            <TextField fx:id="religiousDayExpensesField" GridPane.rowIndex="11" GridPane.columnIndex="1" prefWidth="250"/>
+
+            <Label text="Други разходи:" GridPane.rowIndex="12" GridPane.columnIndex="0"/>
+            <TextField fx:id="otherExpensesField" GridPane.rowIndex="12" GridPane.columnIndex="1" prefWidth="250"/>
+        </GridPane>
+    </content>
+</DialogPane>

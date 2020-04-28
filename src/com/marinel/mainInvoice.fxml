@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.cell.PropertyValueFactory?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.VBox?>
+<BorderPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="com.marinel.InvoiceController"
+            stylesheets="@styles.css"
+            fx:id="invoiceMainBorderPanel">
+    <top>
+        <VBox>
+            <MenuBar>
+                <Menu text="Menu">
+                    <MenuItem text="Add Invoice" onAction="#showAddInvoiceDialog"/>
+                    <MenuItem text="Edit Invoice" onAction="#showEditInvoiceDialog"/>
+                    <MenuItem text="Delete Invoice" onAction="#deleteInvoice"/>
+                </Menu>
+                <Menu text="Preview Invoice">
+                    <MenuItem text="Open Invoice" onAction="#previewFile"/>
+                </Menu>
+                <Menu fx:id="openSearchBox" text="Search box">
+                    <MenuItem text="Open the search box" onAction="#openSearchBox"/>
+                    <MenuItem text="Close the search box" onAction="#closeSearchBox"/>
+                </Menu>
+            </MenuBar>
+        </VBox>
+    </top>
+    <center>
+        <VBox>
+            <TableView fx:id="linksOfFilesTableView" VBox.vgrow="ALWAYS">
+                <columnResizePolicy>
+                    <TableView fx:constant="CONSTRAINED_RESIZE_POLICY"/>
+                </columnResizePolicy>
+                <columns>
+                    <TableColumn text="Invoice Name">
+                        <cellValueFactory>
+                            <PropertyValueFactory property="invoiceName"/>
+                        </cellValueFactory>
+                    </TableColumn>
+
+                    <TableColumn text="Date Added">
+                        <cellValueFactory>
+                            <PropertyValueFactory property="dateAdded"/>
+                        </cellValueFactory>
+                    </TableColumn>
+
+                    <TableColumn text="Invoice Link">
+                        <cellValueFactory>
+                            <PropertyValueFactory property="fileLink"/>
+                        </cellValueFactory>
+                    </TableColumn>
+                </columns>
+            </TableView>
+        </VBox>
+    </center>
+</BorderPane>

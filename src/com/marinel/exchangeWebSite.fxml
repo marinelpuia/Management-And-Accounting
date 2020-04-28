@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.web.WebView?>
+<BorderPane
+        xmlns:fx="http://javafx.com/fxml/1"
+        xmlns="http://javafx.com/javafx/10.0.2-internal"
+        fx:controller="com.marinel.ExchangeWebSiteController"
+        id="exchangeBorderPane" fx:id="exchangeBorderPane"
+        stylesheets="@styles.css">
+
+    <top>
+        <Hyperlink id="exchangeLink" fx:id="exchangeLink" onAction="#handleExchangeLink" alignment="CENTER"/>
+    </top>
+    <center>
+        <WebView fx:id="webView"/>
+    </center>
+</BorderPane>
