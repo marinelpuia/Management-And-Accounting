@@ -28,7 +28,6 @@ public class MonthlyProfit {
     public MonthlyProfit(){}
 
     // Create constructor by hand and use String instead of SimpleStringProperty
-
     public MonthlyProfit(String monthlyName, String yearNumber, String grossProfit, String productsOriginalPrice, String rentAmount,
                   String salaryAmount, String electricityCost, String heatingCost, String waterCost, String advertisingCost,
                   String religiousDayExpenses, String otherExpenses, String netIncome){
@@ -48,8 +47,6 @@ public class MonthlyProfit {
     }
 
     // Create getter and setter
-
-
     public String getMonthlyName() {
         return monthlyName.get();
     }
