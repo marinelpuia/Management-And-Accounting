@@ -1,11 +1,14 @@
 package com.marinel;
 
+import javafx.animation.Animation;
+import javafx.animation.FadeTransition;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.Alert;
 import javafx.scene.control.Button;
 import javafx.scene.control.TextField;
+import javafx.util.Duration;
 
 import java.net.URL;
 import java.text.DecimalFormat;
@@ -248,5 +251,12 @@ public class CalculatorController implements Initializable {
         memory_1_recall.setMaxWidth(Double.POSITIVE_INFINITY);
         memory_2_recall.setMaxWidth(Double.POSITIVE_INFINITY);
         infoHelp.setMaxWidth(Double.POSITIVE_INFINITY);
+
+        FadeTransition fadeOut = new FadeTransition(Duration.seconds(5), infoHelp);
+        fadeOut.setFromValue(1.0);
+        fadeOut.setToValue(0.3);
+        fadeOut.setCycleCount(Animation.INDEFINITE);
+        fadeOut.setAutoReverse(true);
+        fadeOut.play();
     }
 }

@@ -119,10 +119,10 @@
         </tooltip>
     </Button>
 
-    <Button id="buttonCalc" fx:id="infoHelp" mnemonicParsing="false" onAction="#handleInfoHelp" prefHeight="50.0" text="INFO − HELP"
+    <Button id="buttonCalc" fx:id="infoHelp" mnemonicParsing="false" onAction="#handleInfoHelp" prefHeight="50.0" text="INSTRUCTIONS"
             GridPane.rowIndex="9" GridPane.columnIndex="0" GridPane.columnSpan="4">
         <tooltip>
-            <Tooltip text="OPEN THE INFO WINDOW"/>
+            <Tooltip text="CHECK THE INSTRUCTIONS"/>
         </tooltip>
     </Button>
 </GridPane>
