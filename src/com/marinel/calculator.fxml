@@ -76,7 +76,7 @@
     <Button id="addToMemo_1" fx:id="addToMemo" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="10.0" text="M1+"
             GridPane.rowIndex="6" GridPane.columnIndex="0">
         <tooltip>
-            <Tooltip text="ADD TO MEMORY 1 (Gross Profit)"/>
+            <Tooltip text="Add to memory 1"/>
         </tooltip>
     </Button>
 
@@ -85,14 +85,14 @@
     <Button id="clearMemo_1" fx:id="clearMemo" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="10.0" text="MC"
             GridPane.rowIndex="6" GridPane.columnIndex="3">
         <tooltip>
-            <Tooltip text="CLEAR MEMORY 1"/>
+            <Tooltip text="Clear memory 1"/>
         </tooltip>
     </Button>
 
     <Button id="addToMemo_2" fx:id="addToMemo_2" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="10.0" text="M2+"
             GridPane.rowIndex="7" GridPane.columnIndex="0">
         <tooltip>
-            <Tooltip text="ADD TO MEMORY 2 (Investment)"/>
+            <Tooltip text="Add to memory 2"/>
         </tooltip>
     </Button>
 
@@ -101,28 +101,28 @@
     <Button id="clearMemo_2" fx:id="clearMemo_2" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="10.0" text="MC"
             GridPane.rowIndex="7" GridPane.columnIndex="3">
         <tooltip>
-            <Tooltip text="CLEAR MEMORY 2"/>
+            <Tooltip text="Clear memory 2"/>
         </tooltip>
     </Button>
 
     <Button id="memory_recall_1" fx:id="memory_1_recall" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="10.0" text="+ − × ÷ MR1"
             GridPane.rowIndex="8" GridPane.columnIndex="0" GridPane.columnSpan="2">
         <tooltip>
-            <Tooltip text="MEMORY RECALL 1"/>
+            <Tooltip text="Memory recall 1"/>
         </tooltip>
     </Button>
 
     <Button id="memory_recall_2" fx:id="memory_2_recall" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="10.0" text="+ − × ÷ MR2"
             GridPane.rowIndex="8" GridPane.columnIndex="2" GridPane.columnSpan="2">
         <tooltip>
-            <Tooltip text="MEMORY RECALL 2"/>
+            <Tooltip text="Memory recall 2"/>
         </tooltip>
     </Button>
 
     <Button id="buttonCalc" fx:id="infoHelp" mnemonicParsing="false" onAction="#handleInfoHelp" prefHeight="50.0" text="INSTRUCTIONS"
             GridPane.rowIndex="9" GridPane.columnIndex="0" GridPane.columnSpan="4">
         <tooltip>
-            <Tooltip text="CHECK THE INSTRUCTIONS"/>
+            <Tooltip text="Check the instructions"/>
         </tooltip>
     </Button>
 </GridPane>
