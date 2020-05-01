@@ -202,7 +202,7 @@ public class Main extends Application {
           Modify the public void start() method by adding the throws Exception
           Delete all the lines from line 31 to line 206
           Delete the variable checkUserName from public void stop() method
-          Uncomment the lines 208 to 213
+          Uncomment the lines 208 to 213.
         */
 
         //Parent root = FXMLLoader.load(getClass().getResource("main.fxml"));
