@@ -1,5 +1,6 @@
 package com.marinel;
 
+import javafx.animation.RotateTransition;
 import javafx.application.Application;
 import javafx.event.ActionEvent;
 import javafx.event.EventHandler;
@@ -19,6 +20,7 @@ import javafx.scene.text.Font;
 import javafx.scene.text.FontWeight;
 import javafx.stage.Stage;
 import javafx.stage.StageStyle;
+import javafx.util.Duration;
 
 import java.io.IOException;
 import java.time.LocalTime;
@@ -189,12 +191,18 @@ public class Main extends Application {
         primaryStage.setResizable(true);
         primaryStage.show();
 
+        // RotateTransition for login button
+        RotateTransition rotateTransition = new RotateTransition(Duration.millis(3000), btnLogin);
+        rotateTransition.setByAngle(360);
+        rotateTransition.setCycleCount(2);
+        rotateTransition.play();
+
         /*
           Use this block code below in case you don't want to use the login option
           Modify the public void start() method by adding the throws Exception
-          Delete all the lines from line 29 to line 198
+          Delete all the lines from line 34 to line 206
           Delete the variable checkUserName from public void stop() method
-          Uncomment the lines 199 to 205
+          Uncomment the lines 208 to 213
         */
 
         //Parent root = FXMLLoader.load(getClass().getResource("main.fxml"));
