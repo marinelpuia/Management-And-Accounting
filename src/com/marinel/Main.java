@@ -191,7 +191,7 @@ public class Main extends Application {
         primaryStage.setResizable(true);
         primaryStage.show();
 
-        // RotateTransition for login button
+        // RotateTransition for the login button
         RotateTransition rotateTransition = new RotateTransition(Duration.millis(3000), btnLogin);
         rotateTransition.setByAngle(360);
         rotateTransition.setCycleCount(2);
