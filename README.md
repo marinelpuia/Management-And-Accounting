@@ -3,4 +3,4 @@ This is an inventory and accounting program for clothing, footwear and various i
 
 
 
-More details coming soon...
+More details coming soon... until then open the images folder to see some demo images. 
