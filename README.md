@@ -73,7 +73,7 @@ Add product<br>
 <img src="images/addproduct.png" width="600"><br>
 
 Visit the website from where the product was purchased<br>
-<img src="images/visitwebsite.pngg" width="600"><br>
+<img src="images/visitwebsite.png" width="600"><br>
 
 Currency exchange<br>
 <img src="images/exchange.png" width="600"><br>
