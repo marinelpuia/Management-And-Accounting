@@ -60,7 +60,7 @@ public class InvoiceData {
 
                 if (event.isStartElement()) {
                     StartElement startElement = event.asStartElement();
-                    // If we have a invoice item, we create a new invoice
+                    // If we have an invoice item, we create a new invoice
                     if (startElement.getName().getLocalPart().equals(INVOICE)) {
                         invoice = new Invoice();
                         continue;
@@ -102,7 +102,7 @@ public class InvoiceData {
 
                 }
 
-                // If we reach the end of a invoice element, we add it to the list
+                // If we reach the end of an invoice element, we add it to the list
                 if (event.isEndElement()) {
                     EndElement endElement = event.asEndElement();
                     if (endElement.getName().getLocalPart().equals(INVOICE)) {
@@ -121,7 +121,7 @@ public class InvoiceData {
     }
 
 
-    // ***  Method to write the invoices in to XML file ***mma
+    // ***  Method to write the invoices in to XML file ***
     public void saveInvoice() {
 
         try {

@@ -8,7 +8,7 @@ public class Invoice {
     private final SimpleStringProperty dateAdded = new SimpleStringProperty("");
     private final SimpleStringProperty fileLink = new SimpleStringProperty("");
 
-    // Create default constructor whit the same parameters that accepts no values
+    // Create default constructor with the same parameters that accepts no values
     // that's for when we're loading our constructor that accepts no value
     public Invoice() {}
 

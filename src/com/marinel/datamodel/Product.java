@@ -4,7 +4,7 @@ import javafx.beans.property.SimpleStringProperty;
 
 public class Product {
 
-    // Declare the fields information for all products
+    // Declare the fields' information for all products
     // We use SimpleStringProperty to take advantage of data binding to update the user interface
 
     private final SimpleStringProperty productName = new SimpleStringProperty("");

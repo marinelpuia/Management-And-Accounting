@@ -4,7 +4,7 @@ import javafx.beans.property.SimpleStringProperty;
 
 public class YearProfit {
 
-    // Declare the fields information for all incoming and outgoing and we use
+    // Declare the fields' information for all incoming and outgoing and we use
     // SimpleStringProperty to take advantage of data binding to update the
     // user interface
     
@@ -13,7 +13,7 @@ public class YearProfit {
     private final SimpleStringProperty amountOfTaxPaid = new SimpleStringProperty("");
     private final SimpleStringProperty netProfitAfterTax = new SimpleStringProperty("");
 
-    // Create default whit the same parameters that accepts no values
+    // Create default with the same parameters that accepts no values
     // that's for when we're loading our constructor that accepts no value
     public YearProfit(){}
 

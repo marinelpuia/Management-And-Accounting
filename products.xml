@@ -1,3 +1,93 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <products>
+<product>
+	<product_name>Adidasi</product_name>
+	<brand_name>Nike</brand_name>
+	<model_number>Clasic</model_number>
+	<color_name>Alb</color_name>
+	<size_value>42</size_value>
+	<category_name>Baieti</category_name>
+	<web_address>https://www.nike.com/gb/t/air-force-1-07-shoe-pXTXQ8/CT2302-100</web_address>
+	<purchase_date>11-August-2021</purchase_date>
+	<volume_quantity>100</volume_quantity>
+	<buying_price>99.95</buying_price>
+	<stack_price>9995 ( LEV )</stack_price>
+	<selling_price>120</selling_price>
+	<profit_amount>20.05 ( LEV )</profit_amount>
+	<profit_stack>12000 ( LEV )</profit_stack>
+	<remaining_stock>100</remaining_stock>
+	<remaining_stock_profit>0 ( LEV )</remaining_stock_profit>
+</product>
+<product>
+	<product_name>Adidasi</product_name>
+	<brand_name>Rebook</brand_name>
+	<model_number>Clasic</model_number>
+	<color_name>Negru</color_name>
+	<size_value>43</size_value>
+	<category_name>Fete</category_name>
+	<web_address>https://www.nike.com/gb/t/air-force-1-07-shoe-pXTXQ8/CT2302-100</web_address>
+	<purchase_date>11-August-2021</purchase_date>
+	<volume_quantity>100</volume_quantity>
+	<buying_price>99.95</buying_price>
+	<stack_price>9995 ( LEV )</stack_price>
+	<selling_price>125</selling_price>
+	<profit_amount>25.05 ( LEV )</profit_amount>
+	<profit_stack>12500 ( LEV )</profit_stack>
+	<remaining_stock>100</remaining_stock>
+	<remaining_stock_profit>0 ( LEV )</remaining_stock_profit>
+</product>
+<product>
+	<product_name>Automobil</product_name>
+	<brand_name>Bmw</brand_name>
+	<model_number>730</model_number>
+	<color_name>gri</color_name>
+	<size_value>salon</size_value>
+	<category_name>salon</category_name>
+	<web_address>Null</web_address>
+	<purchase_date>01-February-2023</purchase_date>
+	<volume_quantity>5</volume_quantity>
+	<buying_price>20000</buying_price>
+	<stack_price>100000 ( LEV )</stack_price>
+	<selling_price>25000</selling_price>
+	<profit_amount>5000 ( LEV )</profit_amount>
+	<profit_stack>125000 ( LEV )</profit_stack>
+	<remaining_stock>3</remaining_stock>
+	<remaining_stock_profit>10000 ( LEV )</remaining_stock_profit>
+</product>
+<product>
+	<product_name>Automobil</product_name>
+	<brand_name>Bmw</brand_name>
+	<model_number>530</model_number>
+	<color_name>alb</color_name>
+	<size_value>salon</size_value>
+	<category_name>berlina</category_name>
+	<web_address>Null</web_address>
+	<purchase_date>30-January-2023</purchase_date>
+	<volume_quantity>5</volume_quantity>
+	<buying_price>10000</buying_price>
+	<stack_price>50000 ( LEV )</stack_price>
+	<selling_price>15000</selling_price>
+	<profit_amount>5000 ( LEV )</profit_amount>
+	<profit_stack>75000 ( LEV )</profit_stack>
+	<remaining_stock>4</remaining_stock>
+	<remaining_stock_profit>5000 ( LEV )</remaining_stock_profit>
+</product>
+<product>
+	<product_name>Remorca</product_name>
+	<brand_name>An-Mark-Trailer</brand_name>
+	<model_number>Cu bascula</model_number>
+	<color_name>Gri</color_name>
+	<size_value>205x105</size_value>
+	<category_name>Transport</category_name>
+	<web_address>Null</web_address>
+	<purchase_date>05-January-2023</purchase_date>
+	<volume_quantity>12</volume_quantity>
+	<buying_price>800</buying_price>
+	<stack_price>9600 ( LEV )</stack_price>
+	<selling_price>1200</selling_price>
+	<profit_amount>400 ( LEV )</profit_amount>
+	<profit_stack>14400 ( LEV )</profit_stack>
+	<remaining_stock>10</remaining_stock>
+	<remaining_stock_profit>800 ( LEV )</remaining_stock_profit>
+</product>
 </products>
